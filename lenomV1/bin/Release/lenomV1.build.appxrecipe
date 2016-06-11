@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-P0KTCJC</Machine>
+    <WindowsUser>AZUR EeePc</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>983682e0-6200-468d-8cc2-8fcf5f11cab9</PackageIdentityName>
+    <IntermediateOutputPath>E:\Competetion\linum latest\lenomV33\lenomV1\obj\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\lenomV1.exe">
+      <PackagePath>lenomV1.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\packages\Microsoft.ApplicationInsights.1.2.3\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
+      <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\packages\Microsoft.ApplicationInsights.WindowsApps.1.1.1\lib\wpa81\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
+      <PackagePath>Microsoft.ApplicationInsights.Extensibility.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\packages\Microsoft.ApplicationInsights.PersistenceChannel.1.2.3\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll">
+      <PackagePath>Microsoft.ApplicationInsights.PersistenceChannel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\packages\Newtonsoft.Json.8.0.2\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\association_menu_icon\amnisti.png">
+      <PackagePath>Assets\association_menu_icon\amnisti.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\association_menu_icon\maladi.png">
+      <PackagePath>Assets\association_menu_icon\maladi.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\backgroundimg.png">
+      <PackagePath>Assets\backgroundimg.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\compagnship_menu_icon\bakery.png">
+      <PackagePath>Assets\compagnship_menu_icon\bakery.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\compagnship_menu_icon\coffee.png">
+      <PackagePath>Assets\compagnship_menu_icon\coffee.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\compagnship_menu_icon\fastfood.png">
+      <PackagePath>Assets\compagnship_menu_icon\fastfood.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\compagnship_menu_icon\hotel.png">
+      <PackagePath>Assets\compagnship_menu_icon\hotel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\compagnship_menu_icon\market.png">
+      <PackagePath>Assets\compagnship_menu_icon\market.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\compagnship_menu_icon\mencloths.png">
+      <PackagePath>Assets\compagnship_menu_icon\mencloths.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\compagnship_menu_icon\restaurant.png">
+      <PackagePath>Assets\compagnship_menu_icon\restaurant.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\compagnship_menu_icon\womencloths.png">
+      <PackagePath>Assets\compagnship_menu_icon\womencloths.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\help_menu_icon\cleaning.png">
+      <PackagePath>Assets\help_menu_icon\cleaning.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\help_menu_icon\cooking.png">
+      <PackagePath>Assets\help_menu_icon\cooking.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\help_menu_icon\medicines.png">
+      <PackagePath>Assets\help_menu_icon\medicines.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\help_menu_icon\run_errands.png">
+      <PackagePath>Assets\help_menu_icon\run_errands.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\help_menu_icon\walking_olds.png">
+      <PackagePath>Assets\help_menu_icon\walking_olds.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\inside_project_img\fb.png">
+      <PackagePath>Assets\inside_project_img\fb.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\inside_project_img\login-blure.png">
+      <PackagePath>Assets\inside_project_img\login-blure.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\inside_project_img\logo.png">
+      <PackagePath>Assets\inside_project_img\logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\inside_project_img\map_pin.png">
+      <PackagePath>Assets\inside_project_img\map_pin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\inside_project_img\no_cnx_cloud.png">
+      <PackagePath>Assets\inside_project_img\no_cnx_cloud.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\inside_project_img\obj_flag.png">
+      <PackagePath>Assets\inside_project_img\obj_flag.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\inside_project_img\push_b.png">
+      <PackagePath>Assets\inside_project_img\push_b.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\inside_project_img\select_background.png">
+      <PackagePath>Assets\inside_project_img\select_background.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\inside_project_img\tw.png">
+      <PackagePath>Assets\inside_project_img\tw.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\reparation_menu_icon\car_electric.png">
+      <PackagePath>Assets\reparation_menu_icon\car_electric.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\reparation_menu_icon\car_mechanic.png">
+      <PackagePath>Assets\reparation_menu_icon\car_mechanic.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\reparation_menu_icon\computer_repair.png">
+      <PackagePath>Assets\reparation_menu_icon\computer_repair.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\reparation_menu_icon\house_hold.png">
+      <PackagePath>Assets\reparation_menu_icon\house_hold.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\reparation_menu_icon\mobile_repair.png">
+      <PackagePath>Assets\reparation_menu_icon\mobile_repair.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\reparation_menu_icon\roof_repair.png">
+      <PackagePath>Assets\reparation_menu_icon\roof_repair.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\scripts\ai.0.21.5-build00175.js">
+      <PackagePath>scripts\ai.0.21.5-build00175.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\scripts\ai.0.21.5-build00175.min.js">
+      <PackagePath>scripts\ai.0.21.5-build00175.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\packages.config">
+      <PackagePath>packages.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\lenomV1.xr.xml">
+      <PackagePath>lenomV1.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\activeservice.xbf">
+      <PackagePath>activeservice.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\AskHelp.xbf">
+      <PackagePath>AskHelp.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\GuideChoices.xbf">
+      <PackagePath>GuideChoices.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\Login.xbf">
+      <PackagePath>Login.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\Map.xbf">
+      <PackagePath>Map.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\Selector.xbf">
+      <PackagePath>Selector.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\Signper.xbf">
+      <PackagePath>Signper.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\SuperSelector.xbf">
+      <PackagePath>SuperSelector.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\urgent.xbf">
+      <PackagePath>urgent.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\urgent_finder.xbf">
+      <PackagePath>urgent_finder.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\Volunteer.xbf">
+      <PackagePath>Volunteer.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Competetion\linum latest\lenomV33\lenomV1\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

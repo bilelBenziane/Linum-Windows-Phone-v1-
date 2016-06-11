@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="lenomV1.Volunteer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:lenomV1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <!--____________________________bottom app bar___________________________-->
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" x:Name="appBar" 
+                    Background="{StaticResource bottomappbar_color}">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Icon="BackToWindow" x:Name="Main"  IsCompact="False" 
+                              Label="Main Menu" Click="Main_Click"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <!--________________________end bottom app bar___________________________-->
+
+
+
+    <Grid  Margin="0,2,0,-2" >
+         <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+         </Grid.RowDefinitions>
+  <!--________________________header_______________________________-->
+        <Grid Grid.Row="0" Background="{StaticResource header_color}">
+            <StackPanel>
+                <TextBlock x:Name="header"  TextAlignment="Left" HorizontalAlignment="Left"
+                       Margin="17,6,0,0" Padding="0,0,0,0" Height="40" Text="VOLUNTEER"
+                       Style="{StaticResource header_textblock}" FontWeight="Bold" FontSize="32"/>
+                <TextBlock Text="Choose a categorie" FontSize="22" Margin="17,2,0,8" Foreground="#b3e5fc"/>
+            </StackPanel>
+        </Grid>
+        
+  <!--________________________center choices_______________________________-->
+      <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/inside_project_img/select_background.png"
+                    Stretch="UniformToFill" />
+            </Grid.Background>
+            <StackPanel Background="Transparent" >
+                <Button x:Name="help" Style="{StaticResource button_standard}"
+         	        Content="Help and get payed" Margin="0,60,0,0" Click="help_Click"
+                        Template="{StaticResource ButtonControlTemplate1}"/>
+                <Button x:Name="askhelp" Style="{StaticResource button_standard}"
+           		        Content="Ask for help" Margin="0,20,0,0" Click="askhelp_Click"
+                        Template="{StaticResource ButtonControlTemplate1}"/>
+                <Button x:Name="donatemoney" Style="{StaticResource button_standard}"
+           		        Content="Donate money" Margin="0,20,0,0" Click="donatemoney_Click"
+                        Template="{StaticResource ButtonControlTemplate1}"/>
+                <Button x:Name="donatestuf" Style="{StaticResource button_standard}"
+           		        Content="Donate stuffs" Margin="0,20,0,0" Click="donatestuf_Click" 
+                        Template="{StaticResource ButtonControlTemplate1}"/>
+            </StackPanel>
+       </Grid>
+        
+    </Grid>
+</Page>

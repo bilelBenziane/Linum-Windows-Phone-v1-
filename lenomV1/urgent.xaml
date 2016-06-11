@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="lenomV1.urgent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:lenomV1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" x:Name="appBar" Background="{StaticResource bottomappbar_color}">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Icon="BackToWindow" x:Name="Main"  IsCompact="False" Label="Main Menu" Click="Main_Click"/>
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+                <!--  <AppBarButton Label="Test02"/>-->
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+
+    <Grid  Margin="0,2,0,-2" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!--header-->
+        <Grid Grid.Row="0" Background="{StaticResource header_color}">
+            <StackPanel>
+                <TextBlock x:Name="header"  TextAlignment="Left" HorizontalAlignment="Left"
+                       Margin="17,6,0,0" Padding="0,0,0,0" Height="40" Text="URGENT"
+                       Style="{StaticResource header_textblock}" FontWeight="Bold" FontSize="32"/>
+                <TextBlock Text="Choose a categorie" FontSize="22" Margin="17,2,0,8" Foreground="#b3e5fc"/>
+            </StackPanel>
+        </Grid>
+
+        <!--Page Choices-->
+       <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/inside_project_img/select_background.png"
+                    Stretch="UniformToFill" />
+            </Grid.Background>
+            
+            <StackPanel VerticalAlignment="Center">
+                <Button x:Name="AskFix" Style="{StaticResource button_standard}"
+            		    Content="AskFix" Margin="0,0,0,0"
+                        HorizontalAlignment="Center" Click="AskFix_Click" 
+                        Template="{StaticResource ButtonControlTemplate1}"/>
+                <Button x:Name="ActivateService" Style="{StaticResource button_standard}"
+            		    Content="ActivateService" Margin="0,30,0,0" Click="ActivateService_Click"  
+                        Template="{StaticResource ButtonControlTemplate1}"/>
+            </StackPanel>
+        </Grid>
+        <!--End Page Choices-->
+
+    </Grid>
+
+</Page>

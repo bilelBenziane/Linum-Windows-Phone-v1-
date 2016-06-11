@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="lenomV1.urgent_finder"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:lenomV1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <!--this is the starting page when i select what to do Background="{StaticResource gasBrush}" -->
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" x:Name="appBar" Background="{StaticResource Total Color}">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:ConnectionId='1'  x:Name="Main" IsCompact="False" Icon="BackToWindow"
+                              Label="Main Menu"                    />
+
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <!---->
+        <!--__________________________________Header________________________________-->
+        <Grid Grid.Row="0" Style="{StaticResource header_grid}"  >
+            <StackPanel>
+                <TextBlock   TextAlignment="Left" HorizontalAlignment="Left"
+                       Margin="17,6,0,0" Padding="0,0,0,0" Height="40" Text="ASK FOR FIX"
+                       Style="{StaticResource header_textblock}" FontWeight="Bold" FontSize="32"/>
+                <TextBlock x:Name="header" Text="Search... " FontSize="22" 
+                           Margin="17,2,0,8" Foreground="#b3e5fc"/>
+            </StackPanel>
+        </Grid>
+        <!--______________________________End Header________________________________-->
+
+        <!--_____________________________Page Choices_______________________________-->
+        <Grid Grid.Row="1"  >
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/inside_project_img/select_background.png"
+                    Stretch="UniformToFill" />
+            </Grid.Background>
+            <StackPanel>
+            <TextBlock Text="Are you sure you want to submit your app?" FontSize="20"
+                       Height="60" Margin="0,20,0,0" Width="350" VerticalAlignment="Top" 
+                       Foreground="White" Padding="0" HorizontalAlignment="Center" 
+                       TextWrapping="Wrap" x:Name="main_textblock" />
+            <Button x:ConnectionId='2' x:Name="asker" Style="{StaticResource button_standard}"
+            	    Template="{StaticResource ButtonControlTemplate1}"
+                    Content="Submit" Margin="0,0,0,0" Width="180"                    />
+            </StackPanel>
+            
+
+        </Grid>
+        <!--____________________________End Page Choices____________________________-->
+
+        <!--____________________________Footer_____________________________________-->
+
+    </Grid>
+
+</Page>
+

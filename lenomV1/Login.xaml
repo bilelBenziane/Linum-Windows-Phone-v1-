@@ -1,0 +1,109 @@
+﻿<Page
+    x:Class="lenomV1.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:lenomV1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <!--The app bar button-->
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/inside_project_img/select_background.png"
+                    Stretch="UniformToFill" />
+        </Grid.Background>
+        
+        <Grid.Resources>
+            <!--this part is to creat an animation-->
+            <Storyboard x:Name="move_buttonStoryBoard">
+                <DoubleAnimation Duration="0:0:0.0" To="480" 
+                          Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                          Storyboard.TargetName="submitt" d:IsOptimized="True"/>
+            </Storyboard>
+
+            <Storyboard x:Name="move_box_userStoryBoard">
+                <DoubleAnimation Duration="0:0:0.0" To="460" 
+                          Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                          Storyboard.TargetName="user_name" d:IsOptimized="True"/>
+            </Storyboard>
+            <Storyboard x:Name="move_box_pass_StoryBoard">
+                <DoubleAnimation Duration="0:0:0.0" To="460" 
+                          Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                          Storyboard.TargetName="password" d:IsOptimized="True"/>
+            </Storyboard>
+            <Storyboard x:Name="up_text_StoryBoard">
+                <DoubleAnimation Duration="0:0:0.0" To="480" 
+                          Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                          Storyboard.TargetName="up_text" d:IsOptimized="True"/>
+            </Storyboard>
+            <Storyboard x:Name="login_StoryBoard">
+                <DoubleAnimation Duration="0:0:0.0" To="-480" 
+                          Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"
+                          Storyboard.TargetName="login" d:IsOptimized="True"/>
+            </Storyboard>
+            <!--end of animation-->
+        </Grid.Resources>
+      
+        <!--__________This part is for the login________________-->
+        <TextBox x:Name="user_name" Height="70" Width="250" FontSize="20" Margin="0,-220,0,0" 
+                     BorderBrush="{StaticResource Total Color}" Foreground="Black" 
+        	     InputScope="Number" Opacity="0" IsEnabled="False"  	
+                 HorizontalAlignment="Center" BorderThickness="1" Header="Phone number" >
+            <TextBox.RenderTransform>
+                <CompositeTransform/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="password" Height="70" Width="250" FontSize="20" Foreground="Black" 
+                     BorderBrush="red"	HorizontalAlignment="Center" Header="Password"
+                     Margin="0,-150,0,0"  BorderThickness="0" Opacity="0" IsEnabled="False">
+            <TextBox.RenderTransform>
+                <CompositeTransform/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="submitt" Content="SUBMITT" Background="{StaticResource Blue_button}"
+        		HorizontalAlignment="Center" Width="220" Height="70" Foreground="White" Margin="90,-83,90,653" 
+                Click="submitt_Click" BorderBrush="Transparent" 
+                Opacity="0" IsEnabled="False" BorderThickness="0" >
+            <Button.RenderTransform>
+                <CompositeTransform/>
+            </Button.RenderTransform>
+        </Button>
+
+        <!--_____________end of login part_______________-->
+        <StackPanel>
+            <Image Source="/Assets/inside_project_img/logo.png" Height="200" Width="200" Margin="0,30,0,50"/>
+            <TextBlock x:Name="up_text" Text="A Community Service Network That Bring Society Members Closer" 
+                       FontSize="18" Foreground="White" TextWrapping="Wrap" Height="100" Width="300" 
+                       TextAlignment="Center">
+                <TextBlock.RenderTransform>
+                    <CompositeTransform/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <!--This is the login button-->
+            <Button x:Name="login" Content="LOGIN" Background="{StaticResource Blue_button}"
+        		HorizontalAlignment="Center" BorderBrush="Transparent" BorderThickness="0"
+        		Width="220" Height="70" Click="login_Click" Margin="90,0" >
+                <Button.RenderTransform>
+                    <CompositeTransform/>
+                </Button.RenderTransform>
+            </Button>
+            
+            <!--This is the sign up button-->
+            <Button x:Name="sign_up" Content="SIGN UP" Background="{StaticResource center_color}"
+        		HorizontalAlignment="Center" BorderBrush="Transparent" BorderThickness="0"
+        		Width="220" Height="70" Foreground="Black" Click="sign_up_Click" />
+            <TextBlock x:Name="buttom_text" Height="20" 
+                       Text="Follow us on" FontSize="20" Foreground="White"
+        		HorizontalAlignment="Center" Margin="0,20,0,0"/>
+            
+            <!--these are images to open the twitter and facebook pages-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0"
+                        VerticalAlignment="Bottom" >
+                <Image Source="Assets/inside_project_img/fb.png" Width="100" Height="60" Tapped="Image_Tapped_1" />
+                <Image Source="Assets/inside_project_img/tw.png" Width="100" Height="60" Tapped="Image_Tapped" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

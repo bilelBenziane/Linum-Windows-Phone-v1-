@@ -1,0 +1,81 @@
+﻿<!--This page is for the employees to activate ar stop their status-->    
+    <Page
+    x:Class="lenomV1.activeservice"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:lenomV1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <!--This bar is return to the main page-->
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" x:Name="appBar" Background="#FF236787">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton x:ConnectionId='1' Icon="BackToWindow"  x:Name="Main" IsCompact="False" 
+                              Label="Main Menu"                     />
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0" Style="{StaticResource header_grid}">
+            <StackPanel>
+                <TextBlock x:Name="header"  TextAlignment="Left" HorizontalAlignment="Left"
+                       Margin="17,6,0,0" Padding="0,0,0,0" Height="40" Text="ACTIVATE SERVICE"
+                       Style="{StaticResource header_textblock}" FontWeight="Bold" FontSize="32"/>
+                <TextBlock Text="Waiting for your decision" FontSize="22" Margin="17,2,0,8" 
+                           Foreground="#b3e5fc" x:Name="subtitle"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <!--This is for setting the background image-->
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/inside_project_img/select_background.png"
+                    Stretch="UniformToFill" />
+            </Grid.Background>
+            <!--end setting the background image-->
+
+            <StackPanel>
+                <TextBlock Text="Press the activate button to be visible to people in need"
+                           FontSize="20" Width="350" Margin="0,20,0,0" Height="50" TextWrapping="Wrap"
+                            TextAlignment="Left"/>
+                <!--This button is to activate the employee services-->
+                <Button x:ConnectionId='2' Height="80" Background="Transparent" x:Name="activate" 
+                        HorizontalAlignment="Center" Content="Activate"
+                        Foreground="White" FontSize="24" Margin="0,5,0,0" 
+                        VerticalAlignment="Top" Width="180"
+                        Template="{StaticResource ButtonControlTemplate1}"                       
+                        />
+              
+                <TextBlock Text="Press the stop buttton to stop recieving requests about clients"
+                           FontSize="20" Width="350" Margin="0,40,0,0" Height="50" TextWrapping="Wrap"
+                            TextAlignment="Left"/>
+                <!--This button is to stop the employee services-->
+                <Button x:ConnectionId='3' Height="80" Background="Transparent" x:Name="stop"
+                        HorizontalAlignment="Center" Content="Stop"
+                        Foreground="White" FontSize="24" Margin="0,5,0,0" 
+                        VerticalAlignment="Top" Width="180"
+                        Template="{StaticResource ButtonControlTemplate1}"                   
+                        />
+                <!--This is to show whether the employee have a job request or not-->
+                <Button x:ConnectionId='4' Height="80" Background="Transparent" x:Name="gui"
+                        HorizontalAlignment="Center" IsEnabled="False" 
+                        Foreground="White" FontSize="20" Margin="0,60,0,0" 
+                        VerticalAlignment="Bottom"  Width="180" Content="Waiting for jobs"
+                        Template="{StaticResource 
+                        ButtonControlTemplate1}"                   />
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Page>
+

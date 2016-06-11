@@ -1,0 +1,122 @@
+﻿<Page
+    x:Class="lenomV1.Selector"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:lenomV1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <!--This class is for displaying the list of all the gategories in the app-->
+    
+    <!--the bar to navigate to main menu-->
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" x:Name="appBar" Background="{StaticResource Total Color}">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton  x:Name="Main" IsCompact="False" Icon="BackToWindow"
+                              Label="Main Menu" Click="Main_Click" >
+                </AppBarButton>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Style="{StaticResource header_grid}">
+          <StackPanel>
+            <TextBlock x:Name="header"  TextAlignment="Left" HorizontalAlignment="Left"
+                       Margin="17,6,0,0" Padding="0,0,0,0" Height="40"
+                       Style="{StaticResource header_textblock}" FontWeight="Bold" FontSize="32"/>
+                <TextBlock Text="Choose a category" FontSize="22" Margin="17,2,0,8" 
+                           Foreground="#b3e5fc" x:Name="heade"/>
+              
+         </StackPanel>
+        </Grid>
+
+        <!--_______________________________Page Choices________________________________________-->
+        <Grid Grid.Row="1" >
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/inside_project_img/select_background.png"
+                    Stretch="UniformToFill" />
+            </Grid.Background>
+            
+            <Grid.Resources>
+                <!--this part is for animation in case of no internet connection-->
+                <Storyboard x:Name="FadeImageStoryboard">
+                    <DoubleAnimation From="0.2" To="1" Duration="0:0:2" RepeatBehavior="Forever"
+                                     AutoReverse="True" Storyboard.TargetName="no_cnx_img"
+                                     Storyboard.TargetProperty="Opacity" />
+                </Storyboard>
+                <Storyboard x:Name="imgmoveStoryBoard">
+                    <DoubleAnimation Duration="0:0:1" To="240" 
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)"
+                                    Storyboard.TargetName="no_cnx_img" d:IsOptimized="True"/>
+                </Storyboard>
+                <Storyboard x:Name="blockmoveStoryBoard">
+                    <DoubleAnimation Duration="0:0:1" To="-320" 
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)"
+                                    Storyboard.TargetName="no_cnx_txt" d:IsOptimized="True"/>
+                </Storyboard>
+                <!--end of animation -->
+            </Grid.Resources>
+            <ProgressRing HorizontalAlignment="Center" VerticalAlignment="Center" Height="120"
+                           Width="120" IsActive="True" Foreground="White" x:Name="progress" Background="Transparent"/>
+
+            <StackPanel>
+             <!--these are the controle to be shown for the case of no internet-->
+                <Image x:Name="no_cnx_img" Source="/Assets/inside_project_img/no_cnx_cloud.png" 
+            		Height="100"  Width="100"  Opacity="0" Margin="-100,70,0,0" VerticalAlignment="Top"
+            		HorizontalAlignment="Left">
+                    <Image.RenderTransform>
+                        <CompositeTransform/>
+                    </Image.RenderTransform>
+                </Image>
+                <TextBlock x:Name="no_cnx_txt" Text="Check your connection and try again" 
+            		Foreground="White" FontSize="22" 
+                           Margin="0,10,-240,0" Height="100" TextWrapping="Wrap" Width="240" 
+            		Opacity="{Binding Opacity, ElementName=no_cnx_img}"    
+            		TextAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock.RenderTransform>
+                        <CompositeTransform/>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+            </StackPanel>
+
+
+
+            <!--ListBox for displaying gategories-->
+            <ListBox VerticalAlignment="Top"  x:Name="listSelector1"  Height="auto" Background="Transparent">
+                <ListBox.ItemTemplate>
+                    <!--the display is based on this template-->
+                    <DataTemplate>
+                        <StackPanel   Orientation="Horizontal"  
+                                    Style="{StaticResource stackpanel_standard}"
+                                    x:Name="StackPanel" Tapped="StackPanel_Tapped" Margin="3">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="White" Opacity="0.01"/>
+                            </StackPanel.Background>
+                            <Image Source="{Binding img_sources}" Width="50"  x:Name="gategorieImg"
+                                   Height="50"  Margin="10,0,10,0" Opacity="1"/>
+                            <TextBlock Text="{Binding categorie}"  Width="300"
+                                       x:Name="gategorieTextBlock" Opacity="1"
+                                       FontSize="28" HorizontalAlignment="Left" 
+                                       Margin="5,5,0,0" Foreground="White"  />
+                            <TextBlock x:Name="img" Text="{Binding img_sources}" 
+                                       Width="1" FontSize="1" Height="1"/>
+                            <TextBlock x:Name="latitudeTextBlock" Width="1" Height="1" Text="{Binding latitude}" FontSize="1"/>
+                            <TextBlock x:Name="longitudeTextBlock" Width="1" Height="1" Text="{Binding longitude}" FontSize="1" />
+                            <TextBlock x:Name="telTextBlock" Width="1" Height="1" Text="{Binding tel}" FontSize="1"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <!--End Page Choices-->
+    </Grid>
+</Page>

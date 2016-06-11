@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationInsights xmlns="http://schemas.microsoft.com/ApplicationInsights/2013/Settings" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <ComponentSettings xdt:Transform="InsertIfMissing">
+    <!-- Replace ComponentId with the application key you got from the Application Insights service. -->
+    <ComponentId xdt:Transform="InsertIfMissing">00000000-0000-0000-0000-000000000000</ComponentId>
+    <!-- "Auto" indicates developer mode when debugger is attached, "On" forces developer mode always, "Off" forces developer mode never. -->
+    <DevelopmentMode enable="Auto" xdt:Transform="InsertIfMissing">
+      <!-- The analytics SDKs will use this Component Id when debugging -->
+      <ComponentId xdt:Transform="InsertIfMissing">00000000-0000-0000-0000-000000000000</ComponentId>
+    </DevelopmentMode>
+  </ComponentSettings>
+  <ServerAnalytics enabled="true" xdt:Transform="InsertIfMissing">
+    <DataUploadIntervalInMinutes xdt:Transform="InsertIfMissing">1</DataUploadIntervalInMinutes>
+    <AutoFillClientPropertiesFromRequest xdt:Transform="InsertIfMissing">true</AutoFillClientPropertiesFromRequest>
+    <CollectClientIPAddress xdt:Transform="InsertIfMissing">true</CollectClientIPAddress>
+  </ServerAnalytics>
+</ApplicationInsights>

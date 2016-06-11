@@ -1,0 +1,11 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="e:\competetion\linum latest\lenomv33\lenomv1\obj\release\intermediatexaml\lenomv1.exe" HashGuid="8fb2d85a-129b-cb25-a14a-9514038d571c" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windowsphoneapp\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactivity.dll" HashGuid="d25f59e6-dd81-900a-0dfc-55b39f6898ef" />
+    <ReferenceAssembly PathName="e:\competetion\linum latest\linumv4\packages\microsoft.applicationinsights.1.2.3\lib\portable-win81+wpa81\microsoft.applicationinsights.dll" HashGuid="0170f6f5-5974-138b-c2eb-16e08a194005" />
+    <ReferenceAssembly PathName="e:\competetion\linum latest\linumv4\packages\microsoft.applicationinsights.windowsapps.1.1.1\lib\wpa81\microsoft.applicationinsights.extensibility.windows.dll" HashGuid="c6c9a675-baef-7356-0ebc-3e2f9ce7138d" />
+    <ReferenceAssembly PathName="e:\competetion\linum latest\linumv4\packages\microsoft.applicationinsights.persistencechannel.1.2.3\lib\portable-win81+wpa81\microsoft.applicationinsights.persistencechannel.dll" HashGuid="7d4d5890-a85d-3f57-c051-8c33c6cbde67" />
+    <ReferenceAssembly PathName="e:\competetion\linum latest\linumv4\packages\newtonsoft.json.8.0.2\lib\portable-net45+wp80+win8+wpa81+dnxcore50\newtonsoft.json.dll" HashGuid="38db4215-06d8-4b50-81fc-8e6b502244af" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

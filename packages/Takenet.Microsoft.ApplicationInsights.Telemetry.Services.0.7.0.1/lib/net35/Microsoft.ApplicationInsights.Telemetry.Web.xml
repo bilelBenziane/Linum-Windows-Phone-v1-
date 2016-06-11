@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.ApplicationInsights.Telemetry.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.ApplicationInsights.Telemetry.Web.ApplicationInsightsModule">
+            <summary>
+            This http module will automatically load ApplicationInsights into your web application.
+            It will configure app insights to use your component id and will automatically start
+            logging calls for you without any additional configuration.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Telemetry.Web.ApplicationInsightsModule.Init(System.Web.HttpApplication)">
+            <summary>
+            Initializes the module.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ApplicationInsights.Telemetry.Web.ApplicationInsightsModule.Dispose">
+            <summary>
+            Disposes of the module.
+            </summary>
+        </member>
+    </members>
+</doc>
